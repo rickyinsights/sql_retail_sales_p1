@@ -247,7 +247,8 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 You can contact me through :
 
 Email: rickyjoy009@gmail.com  
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricky-bethi-938704335)
+LinkedIn: [https://www.linkedin.com/in/ricky-bethi-938704335](https://www.linkedin.com/in/ricky-bethi-938704335)
+
 
 
 
