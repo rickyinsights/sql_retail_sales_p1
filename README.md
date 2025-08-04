@@ -23,8 +23,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
-CREATE DATABASE p1_retail_db;
-
+CREATE DATABASE sql_project_11
 CREATE TABLE retail_sales
 (
     transactions_id INT PRIMARY KEY,
@@ -54,16 +53,50 @@ SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 SELECT DISTINCT category FROM retail_sales;
 
 SELECT * FROM retail_sales
-WHERE 
-    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
-    gender IS NULL OR age IS NULL OR category IS NULL OR 
-    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+WHERE transactions_id IS NULL
+	  OR
+	  sale_date IS NULL
+	  OR
+	  sale_time IS NULL
+	  OR
+	  customer_id IS NULL
+	  OR
+	  gender IS NULL
+	  OR
+	  age IS NULL
+	  OR
+	  category IS NULL
+	  OR
+	  quantity IS NULL
+	  OR
+	  price_per_unit IS NULL
+	  OR
+	  cogs IS NULL
+	  OR
+	  total_sale IS NULL
 
 DELETE FROM retail_sales
-WHERE 
-    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
-    gender IS NULL OR age IS NULL OR category IS NULL OR 
-    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+WHERE transactions_id IS NULL
+	  OR
+	  sale_date IS NULL
+	  OR
+	  sale_time IS NULL
+	  OR
+	  customer_id IS NULL
+	  OR
+	  gender IS NULL
+	  OR
+	  age IS NULL
+	  OR
+	  category IS NULL
+	  OR
+	  quantity IS NULL
+	  OR
+	  price_per_unit IS NULL
+	  OR
+	  cogs IS NULL
+	  OR
+	  total_sale IS NULL
 ```
 
 ### 3. Data Analysis & Findings
@@ -79,15 +112,13 @@ WHERE sale_date = '2022-11-05';
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
 ```sql
-SELECT 
-  *
+SELECT *
 FROM retail_sales
-WHERE 
-    category = 'Clothing'
-    AND 
-    TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
-    AND
-    quantity >= 4
+WHERE category = 'Clothing'
+	  AND 
+	  quantity >= 4
+	  AND 
+	  TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
 ```
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
@@ -210,6 +241,13 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 2. **Set Up the Database**: Run the SQL scripts provided in the `database_setup.sql` file to create and populate the database.
 3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
+   
+## Author - RICKY BETHI
+
+You can contact me through :
+
+Email: rickyjoy009@gmail.com
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricky-bethi-938704335)
 
 
 
